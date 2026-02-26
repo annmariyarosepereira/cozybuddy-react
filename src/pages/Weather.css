@@ -1,11 +1,11 @@
-/* ==================== WEATHER PAGE STYLES ==================== */
+
 
 .weather-container {
   max-width: 900px;
   margin: 0 auto;
 }
 
-/* Header */
+
 .weather-header {
   text-align: center;
   margin-bottom: 3rem;
@@ -27,7 +27,7 @@
   color: #5a5a6e;
 }
 
-/* Search Box */
+
 .weather-search {
   margin-bottom: 2rem;
 }
@@ -81,7 +81,7 @@
   cursor: not-allowed;
 }
 
-/* Error Message */
+
 .weather-error {
   background: rgba(217, 115, 152, 0.1);
   border: 1px solid rgba(217, 115, 152, 0.3);
@@ -97,7 +97,7 @@
   font-weight: 500;
 }
 
-/* Main Weather Card */
+
 .weather-main-card {
   background: linear-gradient(135deg, 
     rgba(255, 255, 255, 0.95) 0%, 
@@ -145,7 +145,7 @@
   margin-top: 1.5rem;
 }
 
-/* Placeholder State */
+
 .weather-placeholder {
   text-align: center;
   padding: 4rem 2rem;
@@ -160,7 +160,7 @@
   margin: 0;
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
   .weather-title {
     font-size: 2.2rem;

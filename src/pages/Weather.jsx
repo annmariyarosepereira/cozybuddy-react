@@ -50,7 +50,7 @@ export default function Weather() {
     <div className="container mt-5 mb-5">
       <div className="weather-container">
 
-        {/* Header */}
+        
         <div className="weather-header text-center">
           <h2 className="weather-title">🌦 Weather Buddy</h2>
           <p className="weather-subtitle">
@@ -58,7 +58,7 @@ export default function Weather() {
           </p>
         </div>
 
-        {/* Search */}
+        
         <form onSubmit={handleSubmit} className="weather-search">
           <div className="search-box">
             <input
@@ -74,14 +74,14 @@ export default function Weather() {
           </div>
         </form>
 
-        {/* Error */}
+        
         {error && (
           <div className="weather-error text-center">
             <p>⚠️ {error}</p>
           </div>
         )}
 
-        {/* Weather Card */}
+        
         {weather && (
           <div className="weather-main-card text-center">
 
@@ -112,7 +112,7 @@ export default function Weather() {
           </div>
         )}
 
-        {/* Initial Placeholder */}
+        
         {!weather && !loading && !error && (
           <div className="weather-placeholder text-center">
             <p>Enter a city name to get started 🌼</p>

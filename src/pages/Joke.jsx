@@ -28,13 +28,7 @@ export default function Joke() {
       
       console.log("Joke received:", data);
       
-      // API Response format:
-      // {
-      //   type: "general",
-      //   setup: "Why did the chicken cross the road?",
-      //   punchline: "To get to the other side!",
-      //   id: 1
-      // }
+      
       
       setJoke(data);
       setError("");
@@ -52,7 +46,7 @@ export default function Joke() {
     setShowPunchline(true);
   };
 
-  // Fetch joke on component mount
+  
   useEffect(() => {
     fetchJoke();
   }, []);
@@ -68,7 +62,7 @@ export default function Joke() {
           </p>
         </div>
 
-        {/* Loading State */}
+        
         {loading && (
           <div className="joke-loading">
             <div className="loading-spinner"></div>
@@ -76,7 +70,7 @@ export default function Joke() {
           </div>
         )}
 
-        {/* Error State */}
+        
         {error && !loading && (
           <div className="joke-error">
             <p>⚠️ {error}</p>
@@ -89,19 +83,19 @@ export default function Joke() {
           </div>
         )}
 
-        {/* Joke Display */}
+        
         {joke && !loading && !error && (
           <div className="joke-display">
             
             <div className="joke-card">
               <div className="joke-icon">😂</div>
               
-              {/* Setup */}
+              
               <div className="joke-setup">
                 <p className="setup-text">{joke.setup}</p>
               </div>
 
-              {/* Punchline Section */}
+              
               {!showPunchline ? (
                 <button 
                   onClick={handleRevealPunchline} 
@@ -118,7 +112,7 @@ export default function Joke() {
                 </div>
               )}
 
-              {/* Joke Type Badge */}
+              
               <div className="joke-type-badge">
                 <span>{joke.type}</span>
               </div>
@@ -135,7 +129,7 @@ export default function Joke() {
           </div>
         )}
 
-        {/* Initial State */}
+        
         {!joke && !loading && !error && (
           <div className="joke-placeholder">
             <div className="placeholder-icon">🎭</div>

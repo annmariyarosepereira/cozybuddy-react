@@ -9,7 +9,7 @@ export default function Planner() {
   const [errorTime, setErrorTime] = useState("");
   const [errorHolidays, setErrorHolidays] = useState("");
 
-  /* ================= TIME API ================= */
+ 
 
   const fetchTime = async () => {
     setLoadingTime(true);
@@ -32,7 +32,7 @@ export default function Planner() {
     }
   };
 
-  /* ================= HOLIDAYS API (Calendarific) ================= */
+
 
   const fetchHolidays = async () => {
     setLoadingHolidays(true);
@@ -49,7 +49,7 @@ export default function Planner() {
 
       const data = await response.json();
 
-      // Convert Calendarific format → your UI format
+      
       const holidayList = data.response.holidays.map((h) => ({
         localName: h.name,
         date: h.date.iso
@@ -63,14 +63,14 @@ export default function Planner() {
     }
   };
 
-  /* ================= LOAD ON START ================= */
+  
 
   useEffect(() => {
     fetchTime();
     fetchHolidays();
   }, []);
 
-  /* ================= TIME FORMAT ================= */
+ 
 
   const formatDateTime = () => {
     if (!currentTime) return { date: "N/A", time: "N/A", day: "N/A" };
@@ -98,7 +98,7 @@ export default function Planner() {
 
   const { date, time, day } = formatDateTime();
 
-  /* ================= UPCOMING HOLIDAYS ================= */
+ 
 
   const upcomingHolidays = holidays
     .filter((h) => new Date(h.date) >= new Date())
@@ -110,7 +110,7 @@ export default function Planner() {
     return Math.ceil((holiday - today) / (1000 * 60 * 60 * 24));
   };
 
-  /* ================= UI ================= */
+  
 
   return (
     <div className="container mt-5 mb-5">
@@ -123,7 +123,7 @@ export default function Planner() {
           </p>
         </div>
 
-        {/* ===== TIME SECTION ===== */}
+        
         <div className="time-section">
           <h3>⏰ Current Time</h3>
 
@@ -148,7 +148,7 @@ export default function Planner() {
           )}
         </div>
 
-        {/* ===== HOLIDAY SECTION ===== */}
+        
         <div className="holiday-section">
           <h3>🎉 Upcoming Holidays</h3>
 

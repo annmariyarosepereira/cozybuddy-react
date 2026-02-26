@@ -5,7 +5,7 @@ body {
   background-color: #fffef0;
   color: #444;
 }
-/* Navbar links */
+
 .cozy-link {
   color: #2f2f2f !important;
   font-weight: 600;
@@ -13,13 +13,13 @@ body {
   padding: 6px 12px;
 }
 
-/* Hover effect */
+
 .cozy-link:hover {
   background-color: #fdfdc9;
   color: #2f2f2f !important;
 }
 
-/* Dropdown style */
+
 .cozy-dropdown {
   background-color: #fffef0;
   border-radius: 12px;

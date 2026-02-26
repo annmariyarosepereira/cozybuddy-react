@@ -8,7 +8,7 @@ export default function Navbar() {
     >
       <div className="container">
 
-        {/* Brand */}
+        
         <Link
           className="navbar-brand fw-bold"
           to="/"
@@ -17,7 +17,7 @@ export default function Navbar() {
           🧸 CozyBuddy
         </Link>
 
-        {/* Mobile Toggle */}
+        
         <button
           className="navbar-toggler"
           type="button"
@@ -27,7 +27,7 @@ export default function Navbar() {
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        {/* Links */}
+        
         <div className="collapse navbar-collapse" id="navMenu">
           <ul className="navbar-nav ms-auto">
 
@@ -39,7 +39,7 @@ export default function Navbar() {
               <Link className="nav-link cozy-link" to="/about">About</Link>
             </li>
 
-            {/* API Dropdown */}
+            
             <li className="nav-item dropdown">
               <a
                 className="nav-link dropdown-toggle cozy-link"

@@ -6,7 +6,7 @@ export default function Quote() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
-  // Fallback quotes in case all APIs fail
+  
   const fallbackQuotes = [
     {
       content: "The only way to do great work is to love what you do.",
@@ -54,10 +54,10 @@ export default function Quote() {
     try {
       console.log("Fetching quote from API Ninjas...");
       
-      // Try API Ninjas Quotes API
+      
       const response = await fetch("https://api.api-ninjas.com/v1/quotes?category=inspirational", {
         headers: {
-          'X-Api-Key': 'YOUR_API_KEY_HERE'  // Replace with your actual API key
+          'X-Api-Key': 'junJQHgdWxV7MrTt10LsNmkr0Qrz91BrEznc5cWa'  
         }
       });
 
@@ -71,14 +71,7 @@ export default function Quote() {
       
       console.log("Quote received:", data);
       
-      // API Ninjas response format:
-      // [
-      //   {
-      //     "quote": "Quote text here",
-      //     "author": "Author Name",
-      //     "category": "inspirational"
-      //   }
-      // ]
+      
       
       if (data && data[0]) {
         setQuote({
@@ -94,7 +87,7 @@ export default function Quote() {
       console.log("API failed, using fallback quote");
     }
 
-    // If API fails, use a random fallback quote
+    
     const fallback = getRandomFallbackQuote();
     setQuote({
       content: fallback.content,
@@ -105,7 +98,7 @@ export default function Quote() {
     setLoading(false);
   };
 
-  // Fetch quote on component mount
+  
   useEffect(() => {
     fetchQuote();
   }, []);
@@ -121,7 +114,7 @@ export default function Quote() {
           </p>
         </div>
 
-        {/* Loading State */}
+        
         {loading && !quote && (
           <div className="quote-loading">
             <div className="loading-spinner"></div>
@@ -129,7 +122,7 @@ export default function Quote() {
           </div>
         )}
 
-        {/* Error State */}
+        
         {error && (
           <div className="quote-error">
             <p>⚠️ {error}</p>
@@ -139,7 +132,7 @@ export default function Quote() {
           </div>
         )}
 
-        {/* Quote Display */}
+        
         {quote && (
           <div className="quote-display">
             

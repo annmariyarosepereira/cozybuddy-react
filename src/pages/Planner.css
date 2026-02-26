@@ -1,11 +1,11 @@
-/* ==================== PLANNER PAGE STYLES ==================== */
+
 
 .planner-container {
   max-width: 900px;
   margin: 0 auto;
 }
 
-/* Header */
+
 .planner-header {
   text-align: center;
   margin-bottom: 3rem;
@@ -27,7 +27,7 @@
   color: #5a5a6e;
 }
 
-/* Sections */
+
 .time-section,
 .holiday-section {
   margin-bottom: 3rem;
@@ -42,7 +42,7 @@
   text-align: center;
 }
 
-/* ================= TIME CARD ================= */
+
 
 .time-card {
   background: linear-gradient(
@@ -70,7 +70,7 @@
   font-size: 1rem;
 }
 
-/* Buttons */
+
 .time-card button {
   margin-top: 1.2rem;
   padding: 0.7rem 1.5rem;
@@ -87,7 +87,7 @@
   box-shadow: 0 6px 16px rgba(253, 253, 201, 0.4);
 }
 
-/* ================= HOLIDAY LIST ================= */
+
 
 .holiday-list {
   display: grid;
@@ -95,7 +95,6 @@
   gap: 1.2rem;
 }
 
-/* Holiday Card */
 .holiday-card {
   background: rgba(255, 255, 255, 0.9);
   border-radius: 18px;
@@ -121,7 +120,7 @@
   color: #5a5a6e;
 }
 
-/* ================= RESPONSIVE ================= */
+
 
 @media (max-width: 768px) {
   .planner-title {

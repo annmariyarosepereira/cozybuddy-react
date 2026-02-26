@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap');
 
-/* ==================== ROOT VARIABLES ==================== */
+
 :root {
   --wisteria: #c69fd5;
   --wisteria-light: #dac3e4;
@@ -13,7 +13,7 @@
   --white: #ffffff;
 }
 
-/* ==================== GLOBAL STYLES ==================== */
+
 * {
   margin: 0;
   padding: 0;
@@ -59,7 +59,7 @@ h1, h2, h3, h4, h5 {
   color: var(--wisteria) !important;
 }
 
-/* Navbar links */
+
 .cozy-link {
   color: var(--text-secondary) !important;
   font-weight: 500;
@@ -100,7 +100,7 @@ h1, h2, h3, h4, h5 {
   color: var(--text-primary);
 }
 
-/* ==================== HERO SECTION ==================== */
+
 .cozy-hero {
   background: linear-gradient(135deg, 
     rgba(255, 255, 255, 0.9) 0%, 
@@ -182,7 +182,7 @@ h1, h2, h3, h4, h5 {
   font-weight: 600;
 }
 
-/* ==================== CARDS ==================== */
+
 .cozy-card {
   border: none;
   border-radius: 20px;
@@ -214,7 +214,7 @@ h1, h2, h3, h4, h5 {
   line-height: 1.6;
 }
 
-/* ==================== FORMS ==================== */
+
 .form-control {
   border: 2px solid rgba(198, 159, 213, 0.2);
   border-radius: 12px;
@@ -238,7 +238,7 @@ label {
   font-size: 0.95rem;
 }
 
-/* ==================== BUTTONS ==================== */
+
 .btn-warning {
   background: linear-gradient(135deg, var(--lemon-dark), var(--lemon));
   border: none;
@@ -258,8 +258,8 @@ label {
   color: var(--text-primary);
 }
 
-/* ==================== FOOTER ==================== */
-/* ==================== COZY FOOTER ==================== */
+
+
 
 footer {
   background: linear-gradient(
@@ -274,7 +274,7 @@ footer {
   box-shadow: 0 -4px 20px rgba(168, 125, 189, 0.25);
 }
 
-/* Brand Title */
+
 footer h5 {
   color: var(--white);
   font-family: 'Playfair Display', serif;
@@ -283,27 +283,27 @@ footer h5 {
   letter-spacing: 0.5px;
 }
 
-/* Subtext */
+
 footer p {
   color: rgba(255, 255, 255, 0.92);
   margin-bottom: 0.4rem;
   line-height: 1.5;
 }
 
-/* Divider */
+
 footer hr {
   border-color: rgba(255, 255, 255, 0.25);
   margin: 1.6rem 0;
 }
 
-/* Small text (copyright etc.) */
+
 footer .small,
 footer p[style] {
   font-size: 0.85rem;
   opacity: 0.9;
 }
 
-/* Optional link styling (if you add links later) */
+
 footer a {
   color: #fdfdc9;
   text-decoration: none;
@@ -315,12 +315,12 @@ footer a:hover {
   text-decoration: underline;
 }
 
-/* Cozy hover glow (subtle) */
+
 footer:hover {
   box-shadow: 0 -6px 28px rgba(168, 125, 189, 0.35);
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
   footer h5 {
     font-size: 1.6rem;
@@ -331,7 +331,7 @@ footer:hover {
   }
 }
 
-/* ==================== UTILITIES ==================== */
+
 .text-danger {
   color: #d97398 !important;
   font-size: 0.9rem;
@@ -342,7 +342,7 @@ footer:hover {
   max-width: 1200px;
 }
 
-/* ==================== RESPONSIVE ==================== */
+
 @media (max-width: 768px) {
   .cozy-hero h1 {
     font-size: 2.5rem;
@@ -365,7 +365,7 @@ footer:hover {
   }
 }
 
-/* ==================== SCROLLBAR ==================== */
+
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -383,7 +383,7 @@ footer:hover {
   background: var(--wisteria-dark);
 }
 
-/* ==================== ABOUT PAGE STYLES ==================== */
+
 
 .about-hero {
   background: rgba(255, 255, 255, 0.9);
@@ -465,7 +465,7 @@ footer:hover {
   max-width: 900px;
 }
 
-/* API Grid */
+
 .api-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -517,7 +517,7 @@ footer:hover {
   margin: 0;
 }
 
-/* Tech List */
+
 .tech-list {
   display: flex;
   flex-direction: column;
@@ -560,7 +560,7 @@ footer:hover {
   flex: 1;
 }
 
-/* Closing Section */
+
 .about-closing {
   margin-top: 3rem;
   padding: 2rem;
@@ -578,7 +578,7 @@ footer:hover {
   font-style: italic;
 }
 
-/* Responsive Design for About */
+
 @media (max-width: 768px) {
   .about-title {
     font-size: 2.2rem;

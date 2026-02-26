@@ -1,11 +1,11 @@
-/* ==================== JOKE PAGE STYLES ==================== */
+
 
 .joke-container {
   max-width: 800px;
   margin: 0 auto;
 }
 
-/* Header */
+
 .joke-header {
   text-align: center;
   margin-bottom: 3rem;
@@ -27,7 +27,7 @@
   color: #5a5a6e;
 }
 
-/* Loading State */
+
 .joke-loading {
   text-align: center;
   padding: 4rem 2rem;
@@ -58,7 +58,7 @@
   margin: 0;
 }
 
-/* Error State */
+
 .joke-error {
   text-align: center;
   padding: 3rem 2rem;
@@ -91,7 +91,7 @@
   box-shadow: 0 6px 20px rgba(217, 115, 152, 0.3);
 }
 
-/* Joke Display */
+
 .joke-display {
   display: flex;
   flex-direction: column;
@@ -127,7 +127,7 @@
   50% { transform: translateY(-10px); }
 }
 
-/* Setup */
+
 .joke-setup {
   margin-bottom: 2rem;
   flex-grow: 1;
@@ -146,7 +146,7 @@
   margin: 0;
 }
 
-/* Reveal Button */
+
 .reveal-btn {
   padding: 1rem 2.5rem;
   background: linear-gradient(135deg, #fdfdc9, #f5edb0);
@@ -172,7 +172,7 @@
   transform: translateY(0) scale(1);
 }
 
-/* Punchline */
+
 .joke-punchline {
   margin-bottom: 2rem;
   animation: fadeInUp 0.5s ease-out;
@@ -221,7 +221,6 @@
   margin: 0;
 }
 
-/* Joke Type Badge */
 .joke-type-badge {
   text-align: center;
   margin-bottom: 1rem;
@@ -239,7 +238,7 @@
   text-transform: capitalize;
 }
 
-/* API Badge */
+
 .api-badge {
   text-align: center;
   padding-top: 1rem;
@@ -257,7 +256,7 @@
   font-weight: 600;
 }
 
-/* New Joke Button */
+
 .new-joke-btn {
   padding: 1rem 3rem;
   background: linear-gradient(135deg, #a87dbd, #c69fd5);
@@ -287,7 +286,7 @@
   transform: none;
 }
 
-/* Placeholder */
+
 .joke-placeholder {
   text-align: center;
   padding: 4rem 2rem;
@@ -308,7 +307,7 @@
   margin: 0;
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
   .joke-title {
     font-size: 2.2rem;

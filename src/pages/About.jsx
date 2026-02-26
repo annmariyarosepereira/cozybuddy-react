@@ -6,7 +6,7 @@ export default function About() {
 
         <h2 className="about-title">About CozyBuddy</h2>
 
-        {/* INTRO */}
+        
         <p className="about-intro">
           CozyBuddy is a thoughtfully designed web application that seamlessly 
           integrates essential daily tools with moments of inspiration. Acting as 
@@ -14,7 +14,7 @@ export default function About() {
           uplifting content to enhance your everyday experience.
         </p>
 
-        {/* PURPOSE */}
+        
         <div className="about-section">
           <h4 className="section-title">Our Purpose</h4>
           <p className="section-text">
@@ -26,7 +26,7 @@ export default function About() {
           </p>
         </div>
 
-        {/* API SECTION */}
+        
         <div className="about-section">
           <h4 className="section-title">Integrated Services</h4>
           
@@ -73,7 +73,7 @@ export default function About() {
           </div>
         </div>
 
-        {/* TECHNOLOGIES */}
+        
         <div className="about-section">
           <h4 className="section-title">Technical Foundation</h4>
           
@@ -97,7 +97,7 @@ export default function About() {
           </div>
         </div>
 
-        {/* CLOSING */}
+        
         <div className="about-closing">
           <p>
             CozyBuddy represents our commitment to creating a refined digital environment 
